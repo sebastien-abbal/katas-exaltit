@@ -8,7 +8,7 @@ To start, create a `.env` file with this format. ([Don't forget to put your Krat
 
 ```
 NODE_ENV="dev"
-KRATES_ID="619205f54bd518ab9de7"
+KRATES_ID="xxxxxxxxxxxxxxxxxxxx"
 ```
 
 Now you have to run some commands to init the project.

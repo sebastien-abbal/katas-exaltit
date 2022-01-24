@@ -23,5 +23,6 @@
       "@config": ["./src/config"],
       "@types": ["./src/types"]
     }
-  }
+  },
+  "exclude": ["node_modules", "data", "docs", "__tests", "**/*.spec.ts"]
 }

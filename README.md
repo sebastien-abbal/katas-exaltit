@@ -1,6 +1,6 @@
 # Welcome to Exalt-IT Test
 
-This is a proposal for the [Katas Node.js test](https://gitlab.com/exalt-it-dojo/katas-nodejs) was made by **[Sébastien Abbal](https://github.com/sebastien-abbal)** based on node.js language with Typescript.
+This is a proposal for the [Katas Node.js test](https://gitlab.com/exalt-it-dojo/katas-nodejs) made by **[Sébastien Abbal](https://github.com/sebastien-abbal)** based on node.js language with Typescript.
 
 # 🚀 Get started
 

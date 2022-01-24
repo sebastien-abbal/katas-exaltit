@@ -1,0 +1,33 @@
+name: CI-MAIN
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Actions checkout
+        uses: actions/checkout@v2
+
+      - name: Set up node
+        uses: actions/setup-node@v2-beta
+        with:
+          node-version: "12"
+
+      # Build
+      - name: Install packages
+        run: yarn
+
+      - name: Build app
+        run: yarn build
+
+      # Test (with jest)
+      - name: Test app
+        run: yarn test
+        env:
+          NODE_ENV: test
+          KRATES_ID: xxxxxxxxxxxxxxxxxxxx

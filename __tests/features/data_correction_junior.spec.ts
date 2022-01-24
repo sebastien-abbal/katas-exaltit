@@ -2,7 +2,7 @@ import { config } from "@config";
 import { dataCorrectionScript } from "@features/data_correction_junior";
 import * as fs from "fs";
 
-describe("Data correction junior (e2e)", () => {
+describe("Data correction junior", () => {
   beforeEach(async () => await dataCorrectionScript());
 
   it("should final json file exists", () => {

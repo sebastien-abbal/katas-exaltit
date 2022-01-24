@@ -80,17 +80,17 @@ export class DataCorrectionService {
   async streamData({ dataName }: { dataName: string }): Promise<object> {
     return new Promise((resolve, reject) => {
       const inputEndpointPath = `${config.data.dataCorrection.dirPath}/_${dataName}.json`;
-      const jsonSanitized = {};
+      const data = {};
 
       const fileStream = fs.createReadStream(inputEndpointPath);
 
       fileStream
         .pipe(JSONStream.parse([{ emitKey: true }]))
         .on("data", ({ key, value }: { key: string; value: any }) => {
-          jsonSanitized[key] = value;
+          data[key] = value;
         })
         .on("error", (error) => reject(error))
-        .on("end", () => resolve(jsonSanitized));
+        .on("end", () => resolve(data));
     });
   }
 }

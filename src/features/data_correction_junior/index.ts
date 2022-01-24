@@ -22,7 +22,9 @@ export const dataCorrectionScript = async () => {
 
   const kratesService = new KratesService();
 
-  kratesService.createUsers(
-    require(`${config.data.dataCorrection.dirPath}/${config.data.dataCorrection.finalFileName}`)
-  );
+  // Specify to tests with jest to not push the data to Krates.
+  if (config.env !== "test")
+    kratesService.createUsers(
+      require(`${config.data.dataCorrection.dirPath}/${config.data.dataCorrection.finalFileName}`)
+    );
 };

@@ -10,6 +10,7 @@ const rootPath = path.resolve(
 
 export const config = {
   rootPath,
+  env: env.get("NODE_ENV").default("dev").asString(),
   db: {
     kratesID: env.get("KRATES_ID").asString(),
     kratesUrlEndpoint: `https://krat.es/${env.get("KRATES_ID").asString()}`,

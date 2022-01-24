@@ -24,7 +24,6 @@ Well done ! :)
 
 ```bash
 $ yarn run_bigparsing_confirmed 62359
-
 # Will return `Damon Jerde`
 ```
 
@@ -32,21 +31,21 @@ $ yarn run_bigparsing_confirmed 62359
 
 ```bash
 $ yarn run_data_correction_junior
-
 # Will generate a final.json file on ./data/data_correction_junior directory
 ```
 
 # 🚦 Tests
 
-To test all the app with unit/e2e/integration tests, you jest need to run this command line:
+To test all the app with jest, you need to run this command line:
 
 ```bash
 $ yarn test
-
 # Test Suites: 4 passed, 4 total
-# Tests:       7 passed, 7 total
+# Tests:       8 passed, 8 total
 # Snapshots:   0 total
-# Time:        9.063 s
+# Time:        16.605 s
+# Ran all test suites.
+# ✨  Done in 18.60s.
 ```
 
 # 🛠 Docs
